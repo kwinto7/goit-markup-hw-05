@@ -694,7 +694,15 @@ img {
     margin-left: 4px;
 }
 
+.textarea-wrapper {
+    margin-bottom: 16px;
+}
+
 .modal-textarea {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
@@ -706,11 +714,8 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-textarea::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
+.modal-textarea:hover {
+    border-color: #4D5AE5
 }
 
 .checkbox-label {
@@ -734,17 +739,14 @@ img {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: #fff;
-    position: relative;
     margin-right: 8px;
     fill: transparent;
-}
-
-.check-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .checkbox-wrapper {
@@ -756,7 +758,7 @@ img {
 .modal-check:checked + .checkbox-label span {
     background-color: #404bbf;
     border: none;
-    fill: #fff;
+    fill: #F4F4FD;
 }
 
 .modal-btn {
@@ -765,18 +767,22 @@ img {
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
+    height: 56px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
-}
-
-.btn-text {
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-align: center;
     color: #fff;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #404bbf;
 }
 /* ------------------modals------------------ */
 
