@@ -473,20 +473,21 @@ img {
     background-color: #31d0aa;
 }
 
-.sbs-form {
+.sbs-form-wrapper {
     margin-left: 80px;    
-    display: flex;
-    align-items: end;
 }
 
-.sbs-input-label { 
-    display: block;
+.sbs-subtitle { 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+}
+
+.sbs-form {
+    display: flex;
 }
 
 .sbs-input {
@@ -533,7 +534,7 @@ img {
     background-color: #404bbf;
 }
 
-.sbs-input-wrapper:hover .sbs-input-label {
+.sbs-form:hover .sbs-input-label {
     border-color: #4d5ae5;
 }
 
