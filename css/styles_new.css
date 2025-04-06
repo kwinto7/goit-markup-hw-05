@@ -488,6 +488,7 @@ img {
 
 .sbs-form {
     display: flex;
+    gap: 24px;
 }
 
 .sbs-input {
@@ -507,7 +508,6 @@ img {
     min-width: 165px;
     height: 40px;
     background: #4d5ae5;
-    margin-left: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
