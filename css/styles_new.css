@@ -547,7 +547,7 @@ img {
 /* ------------------footer------------------ */
 /* ------------------modals------------------ */
 .modal-overlay {
-    background-color: rgba(29, 32, 80, 0.4);
+    background-color:rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
     left: 0; 
@@ -556,6 +556,8 @@ img {
     z-index: 999;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -564,6 +566,7 @@ img {
 }
 .modal {
     background-color: #FCFCFC;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     padding: 72px 24px 24px 24px;
     border-radius: 4px;
     width: 408px;
@@ -571,6 +574,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
 }
 
@@ -585,29 +589,31 @@ img {
 }
 
 .modal-close-btn {
-    display: block;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #e7e9fc;
     position: absolute;
-    right: 26px;
-    top:26px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    right: 24px;
+    top:24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
 }
 
 .close-btn-icon {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 .modal-close-btn:hover .close-btn-icon,
