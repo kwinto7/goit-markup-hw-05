@@ -645,7 +645,7 @@ img {
     border-color: #4d5ae5;
 }
 
-.modal-input:focus .modal-icon{
+.modal-input:focus + .modal-icon {
     fill: #4d5ae5;
 }
 
@@ -657,11 +657,6 @@ img {
 .modal-field-wrapper:focus .modal-textarea,
 .modal-field-wrapper:hover .modal-textarea {
     border-color: #4d5ae5;
-}
-
-.modal-field-wrapper:focus .modal-icon,
-.modal-field-wrapper:hover .modal-icon {
-    fill: #4d5ae5;
 }
 
 .input-icon-wrapper {
