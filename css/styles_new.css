@@ -742,16 +742,15 @@ img {
     background-color: #fff;
     margin-right: 8px;
     fill: transparent;
+    display: inline-flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
 .checkbox-wrapper {
-    /* display: flex; */
     margin-bottom: 24px;
     align-items: center;
 }
